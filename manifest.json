@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Typiest",
+  "version": "1.0",
+  "description": "This is a extension that will make any page a typing practice",
+  "icons": {
+    "16": "icons/icon-16.ico",
+    "32": "icons/icon-32.ico",
+    "48": "icons/icon-48.ico",
+    "128": "icons/icon-128.ico"
+  },
+  "action": {
+    "default_icon": "icons/icon-32.ico"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["css/index.css"],
+      "js": ["js/content_script.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting"]
+}

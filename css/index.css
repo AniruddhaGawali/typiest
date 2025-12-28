@@ -63,7 +63,6 @@
   z-index: 9999;
 }
 
-/* Stats Card */
 .typist-stats-card {
   position: fixed !important;
   left: 50%;
@@ -142,7 +141,6 @@
   background: #475569;
 }
 
-/* Completed animation */
 .typist-stats-card.typist-stats-completed {
   animation: typist-pulse 0.5s ease;
 }
